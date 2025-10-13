@@ -1,5 +1,5 @@
 {
-  "name": "rps-game",
+  "name": "rps-game-backend",
   "version": "0.0.1",
   "description": "This is well known game: \"Rock, Paper, Scissor\" version by me using Node.js.",
   "keywords": [
