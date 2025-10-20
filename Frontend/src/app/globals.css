@@ -1,6 +1,13 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --background-image: url("/rps-background\ \(1600x1200\).webp");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,12 +26,17 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+main {
+  /* height for testing (temporary) */
+  min-height: 85vh;
+  background-image: var(--background-image);
+  background-position: center;
+  border: #333333 1.7px solid;
 }
 
 a {
@@ -37,3 +49,20 @@ a {
     color-scheme: dark;
   }
 }
+
+@media screen and ( max-width: 1600px ) {
+  header {
+    width: 100vw;
+  }
+  main {
+    width: 100vw;
+  }
+} 
+@media screen and ( min-width: 1600px ) {
+  header {
+    width: 1600px;
+  }
+  main {
+    width: 1600px;
+  }
+} 

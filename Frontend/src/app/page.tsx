@@ -3,9 +3,11 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.mainCont}></main>
+    <>
+      <main className={styles.mainCont}>
+        <b>Main</b>
+      </main>
       <footer className={styles.footer}></footer>
-    </div>
+    </>
   );
 }
