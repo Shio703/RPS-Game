@@ -7,7 +7,6 @@ export default function Home() {
       <main className={styles.mainCont}>
         <b>Main</b>
       </main>
-      <footer className={styles.footer}></footer>
     </>
   );
 }

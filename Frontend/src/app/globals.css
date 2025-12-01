@@ -29,11 +29,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
 }
 
 main {
   /* height for testing (temporary) */
-  min-height: 85vh;
+  min-height: 82vh;
   background-image: var(--background-image);
   background-position: center;
   border: #333333 1.7px solid;
