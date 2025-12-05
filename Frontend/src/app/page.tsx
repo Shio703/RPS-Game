@@ -5,7 +5,10 @@ export default function Home() {
   return (
     <>
       <main className={styles.mainCont}>
-        <b>Main</b>
+        <div className={styles.gameCont}>
+          <div className="computerResultCont"></div>
+          <div className="userResultCont"></div>
+        </div>
       </main>
     </>
   );
