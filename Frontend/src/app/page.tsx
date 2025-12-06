@@ -1,14 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import GameContainer from "@/components/gameContainer/GameContainer";
 
 export default function Home() {
   return (
     <>
       <main className={styles.mainCont}>
-        <div className={styles.gameCont}>
-          <div className="computerResultCont"></div>
-          <div className="userResultCont"></div>
-        </div>
+        <GameContainer />
       </main>
     </>
   );
