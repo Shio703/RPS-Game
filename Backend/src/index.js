@@ -1,7 +1,7 @@
 console.log(process.env.MODE);
 const { Server } = require("socket.io");
 const { createServer } = require("http");
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 const { generatorFunc } = require("./utils/gameUtils");
 
 const httpServer = createServer((req, res) => {
@@ -9,7 +9,7 @@ const httpServer = createServer((req, res) => {
     console.log(req.url, req.method);
   }
   const url = req.url;
-
+  res.setHeader("Access-Control-Allow-Origin", "*");
   if (url === "/") {
     res.writeHead(200, { "content-type": "application/json" });
     res.end(JSON.stringify({ message: generatorFunc(), code: 200 }));
